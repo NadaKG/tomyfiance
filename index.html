@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            
+        <div class="content">
+            <img src="resources/homepic.gif" alt="GIF Animation" class="gif">
+            
+            <div class="keypad-container">
+                <h2>Enter Password</h2>
+                <input type="password" id="passwordInput" readonly>
+                <div class="keypad">
+                    <button onclick="appendNumber(1)">1</button>
+                    <button onclick="appendNumber(2)">2</button>
+                    <button onclick="appendNumber(3)">3</button>
+                    <button onclick="appendNumber(4)">4</button>
+                    <button onclick="appendNumber(5)">5</button>
+                    <button onclick="appendNumber(6)">6</button>
+                    <button onclick="appendNumber(7)">7</button>
+                    <button onclick="appendNumber(8)">8</button>
+                    <button onclick="appendNumber(9)">9</button>
+                    <button onclick="clearInput()">C</button>
+                    <button onclick="appendNumber(0)">0</button>
+                    <button onclick="checkPassword()">OK</button>
+                </div>
+            </div>
+        </div>
+    
+        <p id="message" style="font-size: 30px;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

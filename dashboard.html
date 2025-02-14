@@ -1,0 +1,371 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+            font-family: "Caveat", serif;
+            text-align: center;
+            background-color: #ffb7dc;
+            background-image: url('resources/14849531.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container2 section" id="keypadSection">
+        <div class="piccontainer">
+            <img src="resources/FLHE3860.JPG">
+            <p>How Long Have We Been Together?<img src="resources/pngtree-vector-search-icon-png-image_320926.jpg"
+                    style="width: 20px; height: auto;white-space: nowrap;"></p>
+        </div>
+        <p id="timer">
+            <span class="time-value" id="years"></span> :
+            <span class="time-value" id="days"></span> :
+            <span class="time-value" id="hours"></span> :
+            <span class="time-value" id="minutes"></span> :
+            <span class="time-value" id="seconds"></span>
+        </p>
+        <p class="time-labels">
+            <span>Years</span> <span>Days</span> <span>Hours</span> <span>Minutes</span> <span>Seconds</span>
+        </p>
+
+        <div class="icon-container">
+            <div class="icon-box">
+                <img src="resources/2345932-middle.png" alt="Show Keypad" class="icon"
+                    onclick="showSection('infoSection')">
+                <p class="clickme" onclick="showSection('infoSection')">Click Me!</p>
+            </div>
+            <div class="icon-box">
+                <img src="resources/images.jpg" alt="Show Info" class="icon2" onclick="showSection('infoSection2')">
+                <p class="clickme" onclick="showSection('infoSection2')">Click Me!</p>
+            </div>
+        </div>
+       
+    </div>
+
+    <div id="infoSection" class="section hidden letter-container">
+        <div class="letter-content">
+            <h2>💌 رسالتي ليك</h2>
+            <p>
+                الى حبيبي سفاسيفو,
+                <br><br>
+                كل سنة واحنا مع بعض، يا اغلى الناس في حياتي يا كل ما ليا ❤️ 
+حبيبي وسندي واماني في الدنيا. يا اغلى هدية بعتها
+
+ربنا ليا<br> ساعات بساله انا عملت ايه عشان استحق حد زيك. جيت حياتي نورتها تاني بحبك وحنيتك وطيبتك وجنانك وضحكتك وكل حاجه فيك ❤️
+مهما حاجات وحشه حصلتلي او فكرت فيها ببقى برضو حاسه انها هينه عشان انت معايا بس.<br> حبيبي وقريب جوزي ❤️
+شكرا على وجودك في حياتي، على حبك ليا في الحلو والوحش، في الفرح والزعل، في الصحة والمرض، شكرا على تشجيعك ليا دايما، وثقتك فيا، شكرا على دلعك اللي بتدلعهوني 🥰، شكرا على انك بتحكيلي كل حاجه في حياتك، شكرا على كل حاجه ❤️
+
+                <br><br>
+                كل يوم معاك بيبقى اجمل من اللي قبله. ولا عمري يوم كنت اتخيل اني ممكن ابقى مع راجل زيك.
+                بحبك يا حبيبي وعقبال العمر كله سوا ونبني بيتنا و عيلتنا ونكبر جمب بعض ❤️   <br><br>
+                إلى الأبد،  
+                <br>
+                <span class="signature"> بطابيطو 💕    14\2\2025</span>
+            </p>
+            <button onclick="showSection('keypadSection')" class="back-button">Go Back</button>
+        </div>
+    </div>
+
+<div id="infoSection2" class="section hidden">
+    <h2 style="margin-left: 0px;">📸 Our Memories</h2>
+    
+    <div class="slideshow-container">
+        <!-- Slide 1 (Image) -->
+        <div class="slide fade">
+            <img src="resources/1.jpg" class="media">
+            <p class="caption">Our First Date 💓💓</p>
+        </div>
+
+        <!-- Slide 2 (Image) -->
+        <div class="slide fade">
+            <img src="resources/2.jpg" class="media">
+            <p class="caption">First Time Meeting My Mom 🤝</p>
+        </div>
+
+        <!-- Slide 3 (Image) -->
+        <div class="slide fade">
+            <img src="resources/3.jpg" class="media">
+            <p class="caption">One of our best dates 🥰🤗</p>
+        </div>
+
+        <!-- Slide 4 (Image) -->
+        <div class="slide fade">
+            <img src="resources/4.jpg" class="media">
+            <p class="caption">Moqattam Together💕💕</p>
+        </div>
+
+                <!-- Slide 8 (Image) -->
+                <div class="slide fade">
+                    <img src="resources/8.jpg" class="media">
+                    <p class="caption"></p>
+                </div>
+
+        <!-- Slide 5 (Video) -->
+        <div class="slide fade">
+            <video class="media" controls>
+                <source src="resources/5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">El cooone 🙊😛</p>
+        </div>
+
+        <!-- Slide 6 (Image) -->
+        <div class="slide fade">
+            <img src="resources/6.jpeg" class="media">
+            <p class="caption">Mcdonald's at 2AM While Listening to An*l Beads</p>
+        </div>
+
+        <!-- Slide 7 (Image) -->
+        <div class="slide fade">
+            <img src="resources/7.jpeg" class="media">
+            <p class="caption">Mr. & Ms. Meow 🐱💖</p>
+        </div>
+
+        <!-- Slide 9 (Image) -->
+        <div class="slide fade">
+            <img src="resources/9.jpg" class="media">
+            <p class="caption">Even at sickness you're still with me💖💖</p>
+        </div>
+
+        <!-- Slide 10 (Image) -->
+        <div class="slide fade">
+            <img src="resources/10.jpg" class="media">
+            <p class="caption">Some Dayz In Between 🎮🎮</p>
+        </div>
+
+        <!-- Slide 11 (Image) -->
+        <div class="slide fade">
+            <img src="resources/11.JPG" class="media">
+            <p class="caption">Then We Finally Did It 💍🫶💖</p>
+        </div>
+
+        <!-- Slide 12 (Image) -->
+        <div class="slide fade">
+            <img src="resources/12.JPG" class="media">
+            <p class="caption">Because my heart found its home in you 💕💕</p>
+        </div>
+
+        <!-- Slide 13 (Image) -->
+        <div class="slide fade">
+            <img src="resources/13.JPG" class="media">
+            <p class="caption">5atsheeeeebyyyy💍</p>
+        </div>
+
+        <!-- Slide 14 (Video) -->
+        <div class="slide fade">
+            <video class="media" controls>
+                <source src="resources/14.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">Hehe💍💕💕</p>
+        </div>
+
+        <!-- Slide 15 (Image) -->
+        <div class="slide fade">
+            <img src="resources/15.jpg" class="media">
+            <p class="caption">Crazy First Date After Engagement</p>
+        </div>
+
+        <!-- Slide 16 (Image) -->
+        <div class="slide fade">
+            <img src="resources/16.jpg" class="media">
+            <p class="caption">Yes We Are Crazy</p>
+        </div>
+
+        <!-- Slide 17 (Image) -->
+        <div class="slide fade">
+            <img src="resources/17.jpg" class="media">
+            <p class="caption">Just two lovebirds lost in time 💕💕</p>
+        </div>
+
+        <!-- Slide 18 (Image) -->
+        <div class="slide fade">
+            <img src="resources/18.jpg" class="media">
+            <p class="caption">Fancy Date Night 💕</p>
+        </div>
+
+        <!-- Slide 19 (Video) -->
+        <div class="slide fade">
+            <video class="media" controls>
+                <source src="resources/19.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                <p class="caption">Cuz annoying you is my favorite thing to do</p>
+        </div>
+
+        <!-- Slide 20 (Image) -->
+        <div class="slide fade">
+            <img src="resources/20.jpg" class="media">
+            <p class="caption">First Hardest Goodbye 😪💔</p>
+        </div>
+
+        <!-- Slide 21 (Image) -->
+        <div class="slide fade">
+            <img src="resources/21.jpg" class="media">
+            <p class="caption">Holding your hand, I have everything 🏡❤️</p>
+        </div>
+
+        <!-- Slide 22 (Image) -->
+        <div class="slide fade">
+            <img src="resources/22.jpg" class="media">
+            <p class="caption">Making More Memories Together💕💕</p>
+        </div>
+
+        <!-- Slide 23 (Image) -->
+        <div class="slide fade">
+            <img src="resources/23.jpg" class="media">
+            <p class="caption">Feeling Like a Princess 💕💕</p>
+        </div>
+
+        <!-- Slide 24 (Image) -->
+        <div class="slide fade">
+            <img src="resources/24.jpg" class="media">
+            <p class="caption">Getting Chubby Together :></p>
+        </div>
+
+        <!-- Slide 25 (Video) -->
+        <div class="slide fade">
+            <video class="media" controls>
+                <source src="resources/25.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                <p class="caption">Going To Crazy Places 😲</p>
+        </div>
+
+
+        <!-- Slide 27 (Image) -->
+        <div class="slide fade">
+            <img src="resources/27.jpg" class="media">
+            <p class="caption">First Trip Toghether ✈️💕</p>
+        </div>
+
+
+        <!-- Slide 26 (Image) -->
+        <div class="slide fade">
+            <img src="resources/26.jpg" class="media">
+            <p class="caption">Sunsets are better with you 🌅❤️</p>
+        </div>
+
+
+        <!-- Slide 28 (Image) -->
+        <div class="slide fade">
+            <img src="resources/28.jpg" class="media">
+            <p class="caption">With you every moment is magical ✨💖"</p>
+        </div>
+
+        <!-- Slide 29 (Image) -->
+        <div class="slide fade">
+            <img src="resources/29.jpg" class="media">
+            <p class="caption">You + Me = Unlimited laughter 😂💕</p>
+        </div>
+
+        <!-- Slide 30 (Image) -->
+        <div class="slide fade">
+            <img src="resources/30.jpg" class="media">
+            <p class="caption">Mfalesen but we still had fun 💕💕</p>
+        </div>
+
+        <!-- Slide 31 (Image) -->
+        <div class="slide fade">
+            <img src="resources/31.jpg" class="media">
+            <p class="caption">Second Hardest Goodbye. Can’t wait to create more beautiful memories with you my love ✨💖 </p>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <button onclick="showSection('keypadSection')" class="back-button">Go Back</button>
+</div>
+    
+    <script>
+       function updateTimer() {
+    const startDate = new Date("August 12, 2023 05:42:00");
+    const now = new Date();
+
+    let diff = now - startDate;
+    let seconds = Math.floor((diff / 1000) % 60);
+    let minutes = Math.floor((diff / (1000 * 60)) % 60);
+    let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    let totalDays = Math.floor(diff / (1000 * 60 * 60 * 24));
+    
+    // Correctly calculate years by considering leap years
+    let years = Math.floor(totalDays / 365.25);
+    let remainingDays = totalDays - Math.floor(years * 365.25);
+
+    document.getElementById("years").innerText = years;
+    document.getElementById("days").innerText = remainingDays;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+}
+
+// Update timer every second
+setInterval(updateTimer, 1000);
+updateTimer();
+
+        function showSection(sectionId) {
+            // Hide all sections
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.add('hidden'));
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+        let slideIndex = 0;
+
+function showSlides(n) {
+    let slides = document.querySelectorAll(".slide");
+    let videos = document.querySelectorAll("video");
+
+    // If n is greater than the number of slides, reset to first slide
+    if (n >= slides.length) {
+        slideIndex = 0;
+    }
+
+    // If n is less than 0, go to last slide
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    // Hide all slides
+    slides.forEach(slide => slide.style.display = "none");
+
+    // Pause all videos when changing slides
+    videos.forEach(video => video.pause());
+
+    // Show the selected slide
+    slides[slideIndex].style.display = "block";
+
+    // Auto-play video if it's currently shown
+    let currentMedia = slides[slideIndex].querySelector("video");
+    if (currentMedia) {
+        currentMedia.play();
+    }
+}
+
+// Function to change slides manually
+function changeSlide(n) {
+    slideIndex += n;
+    showSlides(slideIndex);
+}
+
+// Initialize slideshow (start with first slide)
+document.addEventListener("DOMContentLoaded", function () {
+    showSlides(slideIndex);
+});
+
+    </script>
+</body>
+
+</html>

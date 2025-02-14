@@ -1,0 +1,340 @@
+body {
+    font-family: "Caveat", serif;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-family: "Caveat", serif;
+    font-size: 60px;
+    margin-left: 60px;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    user-select: none;
+
+}
+
+.keypad-container {
+    margin-top: -60px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 50px;
+    width: 400px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.keypad button {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #f47fb6;
+    color: white;
+    border-radius: 5px;
+}
+.keypad button:hover {
+    background-color: #f35fa4;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gif {
+    width: 500px;
+    height: auto;
+}
+
+
+
+input {
+    width: 85%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.container2 #timer {
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container2 {
+    user-select: none;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    user-select: auto;
+    gap: 30px;
+    margin-top: 100px;
+
+}
+
+.icon {
+    width: 150px;
+    height: 100px;
+    margin: 0 10px;
+    cursor: pointer !important;
+    pointer-events: auto;
+}
+
+.icon2 {
+    width: 100px;
+    height: 100px;
+    cursor: pointer !important;
+    margin: 0 10px;
+    pointer-events: auto;
+}
+
+.section {
+    display: block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clickme {
+    margin-top: 5px;
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer !important;
+    text-decoration: underline;
+}
+
+.piccontainer img {
+    display: flex;
+    align-items: end;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.piccontainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.piccontainer p {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    margin-left: 30px;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between numbers */
+    font-size: 50px; /* Make numbers large */
+    color: #ffc0cb;
+    font-weight: bold;
+}
+
+.time-value {
+    font-size: 70px; /* Large numbers */
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.time-labels {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between labels */
+    font-size: 30px; /* Smaller than numbers */
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase; /* Make labels uppercase */
+    margin-top: -10px; /* Adjust spacing */
+}
+
+.letter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Allow content to expand */
+    padding: 20px; /* Prevents cutting near edges */
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.letter-content {
+    background: #fef8e6;
+    padding: 40px;
+    width: 55%; /* Make it slightly wider */
+    max-width: 900px; /* Increase max width */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    font-family: 'Amiri', 'Tajawal', 'Cairo', sans-serif;
+    font-size: 24px;
+    line-height: 2.2; /* More spacing for better readability */
+    border: 2px solid #d4a373;
+    direction: rtl; /* Right-to-left text */
+    overflow: hidden; /* Prevents weird overflow issues */
+}
+
+
+.letter-content h2 {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center; /* Keep the title centered */
+}
+
+.letter-content p {
+    text-align: right; /* Align all paragraphs properly */
+    font-size: 22px;
+    padding: 10px;
+    line-height: 2;
+}
+
+.signature {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #d4a373;
+    text-align: right;
+}
+
+
+.back-button {
+    display: block;
+    margin: 30px auto; /* Adds space & centers it */
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #f47fb6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #f35fa4;
+    transform: scale(1.05);
+}
+
+.slideshow-container {
+    position: relative;
+    width: 400px; /* Fixed width */
+    height: 550px; /* Fixed height */
+    margin: auto;
+    background: #d3e9ff; /* Soft blue background */
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.media {
+    width: 100%;
+    height: 450px; /* Fixed height for all media */
+    object-fit: cover; /* Ensures images/videos fit properly */
+    border-radius: 15px;
+}
+
+.caption {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fade {
+    animation: fadeEffect 0.8s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
